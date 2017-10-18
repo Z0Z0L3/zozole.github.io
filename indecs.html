@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tournée en or</title>
+
+	<link rel="shortcut icon" href="star.png">
+
+
+
+	<script type="text/javascript">
+<!--
+
+// Matricea care contine calea pt. imagini
+// Schimbati cu imaginile folosite de dv.
+src = ["fr.jpg", "fr1.jpg", "fr2.jpg", "fr3.jpg", "fr4.jpg", "fr5.jpg", "fr6.jpg", "champs1.jpg", ]
+
+// Matricea care contine adresele URL spre care va redirectiona imaginile
+// Schimbati cu adresele URL folosite de dv.
+url = ["  ",
+"   ", 
+"   ", 
+"   "]
+
+// Aici setati durata, in secunde pt. fiecare imagine
+durata = 3;
+
+// Codul umator prelucreaza matricele
+// Schimba imagine la nr. de secunde stabilite
+// Atribue fiecarei imagini URL-ul corespunator
+ads=[]; ct=0;
+function schimbaAd() {
+  var n=(ct+1)%src.length;
+  if (ads[n] && (ads[n].complete || ads[n].complete==null)) {
+    document["Imagine"].src = ads[ct=n].src;
+  }
+  ads[n=(ct+1)%src.length] = new Image;
+  ads[n].src = src[n];
+  setTimeout("schimbaAd()",durata*1000);
+}
+function adLink() {
+  location.href = url[ct];
+} 
+
+// Apeleaza functia la incarcarea paginii
+onload = function() {
+  if (document.images)
+    schimbaAd();
+}
+//-->
+</script>
+</head>
+<body>
+ <link rel="stylesheet" href="style.css"> 
+<ul>
+<li><a href="">MAISON</a></li>
+<li><a href="file:///C:/Users/Orsivschi/Desktop/Be%20a%20be/practica_info/about.html">SUR</a>
+ </li>
+<li><a href="file:///C:/Users/Orsivschi/Desktop/Be%20a%20be/practica_info/What'snew.html">QUOI DE NEUF</a></li>
+
+<li><a href="file:///C:/Users/Orsivschi/Desktop/Be%20a%20be/practica_info/insurance.html">RÉACTION</a></li>
+<li><a href="file:///C:/Users/Orsivschi/Desktop/Be%20a%20be/practica_info/Joinus.html">VIENS ICI</a></li>
+</ul>
+<div align="right">
+	<form action="www.google.com" >
+	<input type="text" placeholder="Search on google"
+	maxlength="50" id="search">
+
+	<input type="submit" value="Recherche" id="submit">
+</form>
+
+</div>   
+<br>
+<a href="javascript:adLink();" onMouseOver="status=url[ct]; return true;" onMouseOut="status=''">
+  <img name="Imagine" src="romania.jpg" border="0" align="center" width="1320" height="565">
+</a>
+<div align="center">
+<hr>
+<h1>
+En été, notre pensée vole toujours vers de nouvelles destinations.
+Voyages à France!</h1>
+</div>
+<br><br>
+<br>
+<center>
+
+
+
+<nobr>
+<div align="center">
+
+	<div class="image_wrapper"></div><img src="ht.jpg" width="300" height="300" ><a style="color:#444444;">
+	<div>
+
+		<div class="titlecategory"><h4>Concorde Mpntparnasse</h4></div>
+		<div>
+
+	<span class="price"><span class="woocommerce-Price-amount amount">90&nbsp;<span class="woocommerce-Price-currencySymbol"> €</span></span></span> </div>
+		
+<p style="margin:0px;"><span style="font-weight:bold;">Saison: </span>Été<br><span style="font-weight:bold;">   </span>  </p><br>		
+	</div>
+	</a>
+	
+
+
+</div><br><br>
+<div align="center">
+
+
+
+	<img src="ht1.jpg" width="300" height="300" ><a  style="color:#444444;">
+	<div >
+
+		<div class="titlecategory"><h4>Pullman Paris Montparnasse Hotel </h4></div>
+		<div>
+
+	<span class="price"><span class="woocommerce-Price-amount amount">80&nbsp;<span class="woocommerce-Price-currencySymbol">€</span></span></span> </div>
+		
+<p style="margin:0px;"><span style="font-weight:bold;">La catégorie: </span>Visite privée<br><span style="font-weight:bold;">Saison: </span>Toute l'année<br><span style="font-weight:bold;">Durée: </span>6 heures / jour<br></p>		
+	</div>
+	</a>
+	
+
+
+
+</div>
+<div align="center">
+
+
+
+	<div class="image_wrapper"><img src="ht6.jpg" width="300" height="300" >  </div>  <a  style="color:#444444;">
+	<div class="desc">
+
+		<div class="titlecategory"><h4>Vienna House Magic Circus At Disneyland Paris Hotel </h4></div>
+		<div>
+
+	<span class="price"><span class="woocommerce-Price-amount amount">50&nbsp;<span class="woocommerce-Price-currencySymbol">€</span></span></span> </div>
+		
+<p style="margin:0px;"><span style="font-weight:bold;">Saison: </span>Toute l'année<br><span style="font-weight:bold;">Durée: </span>2 heures / jour<br></p>
+
+// asta-i cv gen justify pe modu hard ;P
+
+
+
+	</div>
+	</a>
+	
+
+
+
+</nobr></center><hr>
+<br>
+<div align="center">
+<a href="https://www.facebook.com/letour/" target="_blank"><img src="http://www.niftybuttons.com/scribble/facebook.png" border="0" margin="1px"></a><a href="www.twitter.com" target="_blank"><img src="http://www.niftybuttons.com/scribble/twitter.png" border="0" margin="1px"></a><a href="www.googleplus.com" target="_blank"><img src="http://www.niftybuttons.com/scribble/google.png" border="0" margin="1px"></a>
+
+</div>
+
+</body>
+</html>
